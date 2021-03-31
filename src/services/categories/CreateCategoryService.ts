@@ -10,9 +10,9 @@ class CreateCategoryService {
     execute({ name, description }: Irequest): void {
         const existsCategory = this.categoriesRepository.findByName(name)
         if (existsCategory) {
-            
-
+            throw new Error('Error')
         }
+
         this.categoriesRepository.create({ name, description })
 
     }
