@@ -3,14 +3,14 @@ import { ICategoryRepository, ICreateCategoryDTO } from './ICategoriesRepository
 
 class CategoriesRepository implements ICategoryRepository {
     private categories: Category[];
-    
+
     constructor() {
         this.categories = []
     }
     create({ name, description }: ICreateCategoryDTO): void {
         const category = new Category();
 
-        
+
         Object.assign(category, {
             name,
             description,
