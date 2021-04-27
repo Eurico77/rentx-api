@@ -1,8 +1,8 @@
-import { Router } from 'express';
-import { categoriesRouter } from './categories/categories.routes';
+import { Router } from "express";
 
-const routes = Router()
-routes.use('/categories', categoriesRouter);
+import { categoriesRouter } from "./categories/categories.routes";
 
+const routes = Router();
+routes.use("/categories", categoriesRouter);
 
-export { routes }
+export { routes };
