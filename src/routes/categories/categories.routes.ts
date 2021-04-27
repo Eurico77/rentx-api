@@ -1,23 +1,23 @@
-import { Router } from 'express';
-import { CategoriesRepository } from '../../repositories/categories/CategoriesRepository';
-import { CreateCategoryService } from '../../services/categories/CreateCategoryService';
+// import { Router } from "express";
 
-const categoriesRouter = Router();
-const categoriesRepository = new CategoriesRepository()
+// import { CategoriesRepository } from "../../modules/cars/repositories/categories/CategoriesRepository";
+// import { CreateCategoryService } from "../../modules/cars/services/categories/CreateCategoryService";
 
-categoriesRouter.post('/', (request, response) => {
-    const { name, description } = request.body;
-    
-    const createCategoryService = new CreateCategoryService(categoriesRepository)
-    createCategoryService.execute({ name, description })
+// const categoriesRouter = Router();
+// const categoriesRepository = new CategoriesRepository();
 
-    return response.status(201).send()
-})
+// categoriesRouter.post("/", (request, response) => {
+//   const { name, description } = request.body;
 
-categoriesRouter.get('/', (request, response) => {
-    const all = categoriesRepository.index();
-    return response.json({categories :all})
-})
+//   const createCategoryService = new CreateCategoryService(categoriesRepository);
+//   createCategoryService.execute({ name, description });
 
+//   return response.status(201).send();
+// });
 
-export { categoriesRouter }
+// categoriesRouter.get("/", (request, response) => {
+//   const all = categoriesRepository.index();
+//   return response.json({ categories: all });
+// });
+
+// export { categoriesRouter };
