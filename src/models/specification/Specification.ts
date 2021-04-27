@@ -1,6 +1,6 @@
 import { v4 as uuidV4 } from 'uuid';
 
-class Category {
+class Specification {
 
 	constructor() {
 		if (!this.id) {
@@ -14,4 +14,4 @@ class Category {
 	created_at: Date;
 }
 
-export { Category }
+export { Specification }
