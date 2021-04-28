@@ -1,13 +1,13 @@
-import { Router } from "express";
+import { Router } from 'express';
 
-import { SpecificationsRepository } from "../modules/cars/repositories/SpecificationRepository";
-import { CreateSpecificationService } from "../modules/cars/services/CreateSpecificationService";
+import { SpecificationsRepository } from '../modules/cars/repositories/SpecificationRepository';
+import { CreateSpecificationService } from '../modules/cars/services/CreateSpecificationService';
 
 const specificationsRoutes = Router();
 
 const specificationsRepository = new SpecificationsRepository();
 
-specificationsRoutes.post("/", (request, response) => {
+specificationsRoutes.post('/', (request, response) => {
   const { name, description } = request.body;
   const createSpecificationService = new CreateSpecificationService(
     specificationsRepository
