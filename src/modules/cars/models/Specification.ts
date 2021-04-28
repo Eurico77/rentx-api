@@ -1,4 +1,4 @@
-import { v4 as uuidV4 } from "uuid";
+import { v4 as uuidV4 } from 'uuid';
 
 class Specification {
   constructor() {
