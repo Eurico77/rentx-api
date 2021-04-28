@@ -1,4 +1,4 @@
-import { ISpecificationsRepository } from "../repositories/ISpecificationsRepository";
+import { ISpecificationsRepository } from '../repositories/ISpecificationsRepository';
 
 interface IRequest {
   name: string;
@@ -12,8 +12,9 @@ class CreateSpecificationService {
       name
     );
 
-    if (specificationAlreadyExists)
-      throw new Error("Specification already exists");
+    if (specificationAlreadyExists) {
+      throw new Error('Specification already exists');
+    }
     this.specificationsRepository.create({ name, description });
   }
 }
