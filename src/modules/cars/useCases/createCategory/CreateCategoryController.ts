@@ -1,6 +1,6 @@
-import { Request, Response } from "express";
+import { Request, Response } from 'express';
 
-import { CreateCategoryUseCase } from "./CreateCategoryUseCase";
+import { CreateCategoryUseCase } from './CreateCategoryUseCase';
 
 class CreateCategoryController {
   constructor(private createCategoryUseCase: CreateCategoryUseCase) {}
