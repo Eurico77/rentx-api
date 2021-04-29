@@ -5,6 +5,7 @@
     "description": "This is an API Rent",
     "version": "1.0.0",
     "contact": {
+      "repository": "https://github.com/Eurico77/RentalX-api",
       "email": "euricomagalhaes61@gmail.com"
     }
   },
