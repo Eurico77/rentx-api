@@ -4,16 +4,13 @@
   "port": 5432,
   "username": "postgres",
   "password": "root",
-  "database": "rentx",
+  "database": "RENTX",
   "synchronize": true,
   "logging": false,
-  "entities": [
-     "src/entity/**/*.ts"
-  ],
-  "migrations": [
-     "src/migration/**/*.ts"
-  ],
-  "subscribers": [
-     "src/subscriber/**/*.ts"
-  ]
+  "migrations": ["./src/database/migrations/*.ts"],
+  "entities": ["./src/modules/**/entities/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
+ 
 }
