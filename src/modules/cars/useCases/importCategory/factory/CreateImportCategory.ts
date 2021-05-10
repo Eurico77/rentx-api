@@ -3,7 +3,7 @@ import { ImportCategoryController } from '../ImportCategoryController';
 import { ImportCategoryUseCase } from '../ImportCategoryUseCase';
 
 // usando singleton
-const categoriesRepository = CategoriesRepository.getInstance();
+const categoriesRepository = null;
 const importCategoryUseCase = new ImportCategoryUseCase(categoriesRepository);
 const importCategoryController = new ImportCategoryController(
   importCategoryUseCase
