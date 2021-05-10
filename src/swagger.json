@@ -15,49 +15,44 @@
         "tags": [
           "Category"
         ],
-        "summary": "Create a category"
-      },
-      "description": "Creates a new category",
-      "requestBody": {
-        "content": {
-          "application/json": {
-            "schema": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "type": "string"
+        "summary": "Create category",
+        "description": "Create a new Category",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  }
                 },
-                "description": {
-                  "type": "string"
+                "example": {
+                  "name": "create category sample",
+                  "description": "create category description sample"
                 }
-              },
-              "example": {
-                "name": "teste",
-                "description": "teste"
               }
             }
           }
+        },
+        "responses": {
+          "201": {
+            "description": "created"
+          },
+          "501": {
+            "description": "category already exist"
+          }
         }
       },
-      "responses": {
-        "201": {
-          "description": "Created"
-        },
-        "500": {
-          "description": "Category arleady exists"
-        }
-      }
-    },
-    "get": {
-      "tags": [
-        "Category"
-      ],
-      "summary": "List all categories",
-      "description": "List all categories"
-    },
-    "responses": {
-      "200": {
-        "description": "OK",
+      "get": {
+        "tags": [
+          "Category"
+        ],
+        "summary": "List all categories",
+        "description": "List all categories",
         "content": {
           "application/json": {
             "schema": {
@@ -74,6 +69,11 @@
                 }
               }
             }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
