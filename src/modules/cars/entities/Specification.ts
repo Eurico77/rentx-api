@@ -1,3 +1,4 @@
+import { Column, CreateDateColumn, PrimaryColumn } from 'typeorm';
 import { v4 as uuidV4 } from 'uuid';
 
 class Specification {
@@ -7,9 +8,16 @@ class Specification {
     }
   }
 
+  @PrimaryColumn()
   id?: string;
+
+  @Column()
   name: string;
+
+  @Column()
   description: string;
+
+  @CreateDateColumn()
   created_at: Date;
 }
 
