@@ -1,5 +1,5 @@
 Arguments: 
-  /home/eurico/.nvm/versions/node/v14.16.1/bin/node /home/eurico/.nvm/versions/node/v14.16.1/bin/yarn add tsyringi
+  /home/eurico/.nvm/versions/node/v14.16.1/bin/node /home/eurico/.nvm/versions/node/v14.16.1/bin/yarn add bycript
 
 PATH: 
   /home/eurico/.zinit/polaris/bin:/home/eurico/.nvm/versions/node/v14.16.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/tsyringi: Not found
+  Error: https://registry.yarnpkg.com/bycript: Not found
       at Request.params.callback [as _callback] (/home/eurico/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:66988:18)
       at Request.self.callback (/home/eurico/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:140662:22)
       at Request.emit (events.js:315:20)
