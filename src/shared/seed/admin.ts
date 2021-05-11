@@ -1,11 +1,10 @@
 import { hash } from 'bcrypt';
 import { v4 as uuidV4 } from 'uuid';
 
-import { AppError } from '../errors/appError';
+import '../../database';
+import { AppError } from '../errors/AppError';
 
-// import createConnection from '../../database';
 const createConnection = null;
-
 async function create() {
   const connection = await createConnection('localhost');
   const id = uuidV4();
