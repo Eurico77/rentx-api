@@ -27,11 +27,11 @@ class User {
   @Column()
   isAdmin: boolean;
 
-  @CreateDateColumn()
-  created_at: Date;
-
   @Column()
   avatar: string;
+
+  @CreateDateColumn()
+  created_at: Date;
 }
 
 export { User };
