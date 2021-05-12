@@ -1,10 +1,7 @@
 import { getRepository, Repository } from 'typeorm';
 
 import { Specification } from '../../entities/Specification';
-import {
-  ISpecificationsRepository,
-  ICreateSpecificationsDTO,
-} from '../ISpecificationsRepository';
+import { ISpecificationsRepository, ICreateSpecificationsDTO } from '../ISpecificationsRepository';
 
 class SpecificationsRepository implements ISpecificationsRepository {
   private repository: Repository<Specification>;
@@ -15,7 +12,7 @@ class SpecificationsRepository implements ISpecificationsRepository {
   async create({ description, name }: ICreateSpecificationsDTO): Promise<void> {
     const specification = this.repository.create({
       description,
-      name,
+      name
     });
 
     await this.repository.save(specification);
