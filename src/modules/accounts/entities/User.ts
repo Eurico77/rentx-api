@@ -1,6 +1,8 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn } from 'typeorm';
 import { v4 as uuidV4 } from 'uuid';
 
+console.log('alo mundo cruel');
+
 @Entity('users')
 class User {
   constructor() {
