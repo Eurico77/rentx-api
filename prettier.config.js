@@ -1,6 +1,3 @@
 module.exports = {
-  singleQuote: true,
-
-  trailingComma: 'none',
-  printWidth: 200,
-};
+    singleQuote: false,
+}
